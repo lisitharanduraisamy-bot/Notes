@@ -1,0 +1,54 @@
+# HTML BASIC THEORY NOTES
+
+## 1. Introduction to HTML
+HTML stands for HyperText Markup Language. It is the standard markup language used to create and structure web pages. HTML describes the structure of a webpage using elements and tags.
+
+## 2. Basic Structure of HTML
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+    <p>This is my first webpage.</p>
+</body>
+</html>
+```
+
+## 3. HTML Tags
+HTML tags are keywords enclosed in angle brackets that define elements on a webpage.
+
+Examples:
+- `<html>` – Defines the HTML document.
+- `<head>` – Contains metadata.
+- `<title>` – Defines the webpage title.
+- `<body>` – Contains visible webpage content.
+- `<p>` – Defines a paragraph.
+- `<h1>` – Defines a main heading.
+
+## 4. HTML Headings
+HTML provides six levels of headings, from `<h1>` to `<h6>`. The `<h1>` tag represents the highest-level heading, while `<h6>` represents the lowest-level heading.
+
+Example:
+```html
+<h1>Main Heading</h1>
+<h2>Subheading</h2>
+<h3>Third-Level Heading</h3>
+```
+
+## 5. HTML Paragraphs
+The `<p>` tag is used to display paragraphs of text on a webpage.
+
+Example:
+```html
+<p>HTML is used to create web pages.</p>
+```
+
+## 6. HTML Text Formatting
+HTML provides tags to format text.
+
+- `<b>` – Displays bold text.
+- `<strong>` – Indicates important text.
+- `<i>` – Displays italic text
