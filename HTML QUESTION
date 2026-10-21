@@ -1,0 +1,77 @@
+# HTML BASIC NOTES
+
+## 1. What is HTML?
+HTML stands for HyperText Markup Language. It is used to create web pages.
+
+## 2. Basic HTML Structure
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Welcome to HTML</p>
+</body>
+</html>
+```
+
+## 3. Important HTML Tags
+
+- `<html>` – Defines the HTML document.
+- `<head>` – Contains page information.
+- `<title>` – Sets the page title.
+- `<body>` – Contains visible content.
+- `<h1>` – Creates a main heading.
+- `<p>` – Creates a paragraph.
+- `<br>` – Inserts a line break.
+- `<hr>` – Creates a horizontal line.
+- `<b>` – Makes text bold.
+- `<i>` – Makes text italic.
+- `<u>` – Underlines text.
+
+## 4. Example 1: Simple Web Page
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>This is my first HTML page.</p>
+</body>
+</html>
+```
+
+## 5. Example 2: Heading, Button and Link
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Basics</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>About Me</h2>
+    <p>I am learning HTML.</p>
+    <button>Click Me</button>
+    <br><br>
+    <a href="https://www.google.com">Visit Google</a>
+</body>
+</html>
+```
+
+## 6. How to Run HTML
+1. Open Notepad.
+2. Type or paste the HTML code.
+3. Save the file as `index.html`.
+4. Open the file in Google Chrome.
+
+## 7. Advantages of HTML
+1. Easy to learn and use.
+2. Creates web page structures.
+3. Supported by web browsers.
+4. Works with CSS and JavaScript.
+5. Free
