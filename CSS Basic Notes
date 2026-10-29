@@ -1,0 +1,309 @@
+# CSS BASIC NOTES
+
+## 1. What is CSS?
+CSS stands for **Cascading Style Sheets**. It is used to style and design HTML webpages.
+
+**Uses of CSS:**
+- Change text color and background color.
+- Set font size and font style.
+- Add borders and spacing.
+- Control webpage layout.
+- Make websites responsive.
+
+## 2. Types of CSS
+
+### a) Inline CSS
+CSS is written inside an HTML element using the `style` attribute.
+
+```html
+<p style="color: red;">Hello World</p>
+```
+
+### b) Internal CSS
+CSS is written inside the `<style>` tag in the HTML document.
+
+```html
+<html>
+<head>
+<style>
+p {
+    color: blue;
+}
+</style>
+</head>
+<body>
+<p>Hello World</p>
+</body>
+</html>
+```
+
+### c) External CSS
+CSS is written in a separate `.css` file and linked to the HTML file.
+
+**HTML file:**
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+**style.css:**
+```css
+p {
+    color: green;
+}
+```
+
+## 3. CSS Syntax
+
+```css
+selector {
+    property: value;
+}
+```
+
+**Example:**
+```css
+h1 {
+    color: red;
+    font-size: 30px;
+}
+```
+
+- **Selector:** Selects the HTML element.
+- **Property:** Specifies what to change.
+- **Value:** Specifies how it should look.
+
+## 4. CSS Selectors
+
+### Element Selector
+Selects all elements with a particular tag name.
+
+```css
+p {
+    color: blue;
+}
+```
+
+### ID Selector
+Selects an element with a specific ID. It uses `#`.
+
+```css
+#heading {
+    color: red;
+}
+```
+
+### Class Selector
+Selects elements with a particular class. It uses `.`.
+
+```css
+.title {
+    color: green;
+}
+```
+
+### Universal Selector
+Selects all HTML elements.
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+```
+
+## 5. CSS Colors and Background
+
+```css
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: red;
+}
+```
+
+Colors can be specified using color names, hexadecimal values, RGB, and HSL.
+
+```css
+h1 {
+    color: #ff0000;
+}
+```
+
+## 6. CSS Text and Fonts
+
+```css
+p {
+    color: black;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+```
+
+**Important properties:**
+- `color` – Changes text color.
+- `font-size` – Changes text size.
+- `font-family` – Changes the font.
+- `font-weight` – Controls text thickness.
+- `text-align` – Aligns text.
+- `text-decoration` – Adds or removes text decoration.
+
+## 7. CSS Border
+
+The `border` property adds a border around an element.
+
+```css
+div {
+    border: 2px solid black;
+}
+```
+
+Other border styles include `dotted`, `dashed`, and `double`.
+
+## 8. CSS Margin and Padding
+
+- **Margin:** Space outside an element's border.
+- **Padding:** Space between the content and its border.
+
+```css
+div {
+    margin: 20px;
+    padding: 15px;
+}
+```
+
+## 9. CSS Width and Height
+
+These properties control the dimensions of an element.
+
+```css
+div {
+    width: 300px;
+    height: 150px;
+}
+```
+
+## 10. CSS Box Model
+
+The CSS box model consists of four parts:
+
+1. Content
+2. Padding
+3. Border
+4. Margin
+
+It determines how space and dimensions are calculated around HTML elements.
+
+## 11. CSS Display Property
+
+The `display` property controls how an element appears in the layout.
+
+```css
+div {
+    display: block;
+}
+```
+
+Common values:
+- `block` – Starts on a new line and usually takes the available width.
+- `inline` – Stays within the same line.
+- `inline-block` – Stays inline while allowing width and height.
+- `flex` – Creates a flexible layout.
+- `grid` – Creates a grid layout.
+- `none` – Hides the element and removes it from the layout.
+
+## 12. CSS Hover Effect
+
+The `:hover` pseudo-class applies styles when the mouse pointer is over an element.
+
+```css
+button {
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    background-color: green;
+}
+```
+
+## 13. CSS Flexbox
+
+Flexbox is used to arrange elements in a row or column.
+
+```css
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+```
+
+- `justify-content` – Aligns items along the main axis.
+- `align-items` – Aligns items along the cross axis.
+- `gap` – Adds space between items.
+
+## 14. CSS Comments
+
+Comments explain code and are ignored by the browser.
+
+```css
+/* This is a CSS comment */
+h1 {
+    color: red;
+}
+```
+
+## 15. Simple CSS Program
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 35px;
+        }
+
+        p {
+            color: green;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS</h1>
+    <p>This is my first CSS program.</p>
+    <button>Click Me</button>
+</body>
+</html>
+```
+
+## Conclusion
+
+CSS is an important technology used to design attractive and responsive webpages. By learning CSS selectors, colors, fonts, borders, spacing, layouts, and hover effects, we can create well-designed websites.
