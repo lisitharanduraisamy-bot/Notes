@@ -1,0 +1,308 @@
+# CSS BASIC 2 – INTERMEDIATE BASICS
+
+## 1. CSS Selectors
+
+CSS selectors are used to select HTML elements and apply styles.
+
+**Example:**
+```css
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: 18px;
+}
+
+.title {
+    color: green;
+}
+
+#header {
+    background-color: yellow;
+}
+```
+
+## 2. CSS Units
+
+CSS units define the size of elements, text, margins, and padding.
+
+- `px` – Pixels
+- `%` – Percentage
+- `em` – Relative to the parent's font size
+- `rem` – Relative to the root font size
+- `vw` – Viewport width
+- `vh` – Viewport height
+
+**Example:**
+```css
+.box {
+    width: 50%;
+    height: 200px;
+    font-size: 20px;
+}
+```
+
+## 3. CSS Background Properties
+
+Background properties control the background of an element.
+
+```css
+body {
+    background-color: lightblue;
+}
+
+.box {
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+```
+
+## 4. CSS Border Radius
+
+The `border-radius` property creates rounded corners.
+
+```css
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+```
+
+## 5. CSS Box Shadow
+
+The `box-shadow` property adds a shadow around an element.
+
+```css
+.card {
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+}
+```
+
+## 6. CSS Position Property
+
+The `position` property controls how an element is positioned.
+
+- `static` – Default position.
+- `relative` – Positioned relative to its normal position.
+- `absolute` – Positioned relative to its nearest positioned ancestor.
+- `fixed` – Stays in the same position relative to the viewport.
+- `sticky` – Switches between relative and fixed positioning based on scrolling.
+
+**Example:**
+```css
+.box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+```
+
+## 7. CSS Flexbox Alignment
+
+Flexbox helps arrange elements horizontally or vertically.
+
+```css
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+```
+
+Important properties:
+- `justify-content`
+- `align-items`
+- `flex-direction`
+- `flex-wrap`
+- `gap`
+
+## 8. CSS Grid
+
+CSS Grid is used to create rows and columns in a webpage layout.
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+```
+
+This creates three equal-width columns.
+
+## 9. CSS Transitions
+
+Transitions make changes in CSS properties appear smoothly.
+
+```css
+button {
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+}
+```
+
+## 10. CSS Transform
+
+The `transform` property rotates, scales, moves, or skews elements.
+
+```css
+.box {
+    transform: scale(1.1);
+}
+```
+
+Other examples:
+```css
+transform: rotate(45deg);
+transform: translateX(20px);
+transform: scale(1.2);
+```
+
+## 11. CSS Pseudo-Classes
+
+Pseudo-classes apply styles when an element is in a particular state.
+
+```css
+button:hover {
+    background-color: green;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+li:first-child {
+    color: red;
+}
+```
+
+## 12. CSS Responsive Design
+
+Responsive design makes websites work well on different screen sizes.
+
+```css
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+```
+
+The media query applies the styles when the viewport width is 600 pixels or less.
+
+## 13. CSS Variables
+
+CSS variables store reusable values.
+
+```css
+:root {
+    --main-color: blue;
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+button {
+    background-color: var(--main-color);
+}
+```
+
+## 14. CSS Overflow
+
+The `overflow` property controls content that exceeds an element's size.
+
+```css
+.box {
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}
+```
+
+Common values:
+- `visible`
+- `hidden`
+- `scroll`
+- `auto`
+
+## 15. Mini Project – Simple Profile Card
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px gray;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        p {
+            color: gray;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>My Profile</h2>
+        <p>Name: Student</p>
+        <p>Department: CSE</p>
+        <button>View Profile</button>
+    </div>
+</body>
+</html>
+```
+
+## Conclusion
+
+CSS Basic 2 covers intermediate styling concepts such as positioning, Flexbox, Grid, transitions, transforms, responsive design, and CSS variables. These concepts help create modern, attractive, and mobile-friendly websites.
